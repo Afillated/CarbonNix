@@ -94,6 +94,23 @@
             ./hosts/ge66-raider
           ];
         };
+        "hdabrosNix" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            # Apply the overlays properly within the NixOS module system
+            {
+              nixpkgs.overlays = [
+                rust-overlay.overlays.default
+                customPackagesOverlay
+              ];
+            }
+            ./hosts/hdabros
+           ];
+        };
+        
       };
     };
 }

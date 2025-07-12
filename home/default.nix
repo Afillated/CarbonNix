@@ -1,9 +1,9 @@
 { pkgs, ... }: {
   imports = [
-    ./dev
+    # ./dev
     ./gaming
-    ./hardware
-    ./hyprland
+    # ./hardware
+    # ./hyprland
     ./music
     ./shell
     ./sioyek.nix
@@ -11,15 +11,15 @@
     ./terminals
     ./theme
     ./utils
-    ./xdg.nix
+    # ./xdg.nix
     # ./editors
     ./zen-browser.nix
   ];
 
   # TODO: Organize this better
   home.packages = with pkgs; [
-    grimblast
-    hyprshot
+    # grimblast
+    # hyprshot
     wget
     git
     brightnessctl

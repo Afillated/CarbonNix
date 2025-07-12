@@ -5,8 +5,9 @@
     ./fonts.nix
     ./gaming.nix
     ./xserver.nix
-    ./hyprland.nix
-    ./podman.nix
-    ./teamviewer.nix
+    # ./hyprland.nix
+    ./plasma.nix
+    # ./podman.nix
+    # ./teamviewer.nix
   ];
 }

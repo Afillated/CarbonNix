@@ -1,9 +1,9 @@
 { ... }: {
   imports = [
     ./audio.nix
-    ./filesystems.nix # something breaks here potentially
+    # ./filesystems.nix # something breaks here potentially
     ./nvidia.nix
     ./power.nix
-    ./razer.nix
+    # ./razer.nix
   ];
 }
