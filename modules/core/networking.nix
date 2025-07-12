@@ -28,6 +28,7 @@
 
   # This will let us install better wifi drivers supposedly
   hardware.enableRedistributableFirmware = true;
+  boot.blacklistedKernelModules = [ "wl" "broadcom-sta" ];
 
   hardware.bluetooth = {
     enable = true;
