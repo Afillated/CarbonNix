@@ -13,7 +13,7 @@
       configurationLimit = 8;
     };
 
-    kernelPackages = pkgs.linuxPackages_latest;
+    # kernelPackages = pkgs.linuxPackages_6_6s;
 
     loader.efi.canTouchEfiVariables = true;
     plymouth.enable = true;
